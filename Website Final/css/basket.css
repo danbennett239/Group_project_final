@@ -1,0 +1,8 @@
+/* BASKET */
+.basket {
+  display: flex;
+  flex-direction: row;
+}
+.basket h4 {
+  padding-right: 10px;
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--JavaScipt-->
+  <script src="javascript/basketStore.js" defer></script>
+  <script src="javascript/bestsellers.js" defer></script>
+  <script src="javascript/script.js" defer></script>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="css/cstylesheet.css">
+  <link rel="stylesheet" href="css/basket.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!--Fonts - Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Title-->
+  <title>Bestsellers</title>
+</head>
+<body>
+    <div class = "logo"> 
+        <center> <img src = "images/logonoback.jpg" width = 400px height = auto > </center>
+      </div>
+      <div class="basket">
+        <h4>BASKET</h4>
+        <Button class="recommended-buy-now" id="check-out-button">Check Out</Button>
+      </div>
+      <div class="basket-info" id="basket-container"></div>  
+    
+  <!--Nav bar-->
+  <nav class="navbar">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <!--Within images are icons downloaded for catagory (From RemixIcon.com)-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bestsellers.html">Bestsellers</a></li>
+        <li><a href="latestreleases.html">Latest Releases</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--Bestsellers-->
+  <!--Current CSS is same as recommended, change the class names or CSS-->
+  <div class="recommended-page-block">
+    <div class="recommended-title"><center>Bestsellers</center></div>
+    <div class="recommended-row">
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-1" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-1"> Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-1" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="0">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-2" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-2" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-2" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="1">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-3" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-3"> Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-3" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="2">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-4" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-4" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-4" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="3">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-5" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-5" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-5" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="4">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-6" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-6" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-6" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="5">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second row -->
+  
+  <div class="recommended-page-block">
+    <div class="recommended-title"></div>
+    <div class="recommended-row">
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-7" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-7" > Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-7" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="6">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-8" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-8" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-8" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="7">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-9" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-9" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-9" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="8">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-10" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-10" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-10" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="9">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-11" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-11" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-11" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="10">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-12" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-12" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-12" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="11">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Third row -->
+  
+  <div class="recommended-page-block">
+    <div class="recommended-title"></div>
+    <div class="recommended-row">
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-13" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-13" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-13" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="12">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-14" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-14" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-14" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="13">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-15" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-15" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-15" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="14">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-16" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-16" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-16" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="15">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-17" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-17" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-17" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="16">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+      <div class="recommended-game-card">
+        <div class="recommended-game-cover">
+          <img class="recommended-image" id = "bestsellers-cover-18" src="images/grey.jpg" alt="Game Cover">
+        </div>
+        <div class="recommended-card-info" id = "bestsellers-title-18" >Loading... </div>
+        <div class="recommended-price" id = "bestsellers-price-18" >Loading...</div>
+        <div class="recommened-button-row">
+          <button class="recommended-buy-now add-to-basket" data-id="17">
+            <!-- <img class="recommended-cart-icon" src="images/shopping-cart-icon.png" alt="Shopping Cart Icon"> -->
+            Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- CHATBOT-->
+  <div class="chat-container">
+    <div class="chat-bubble" onclick="toggleChatBox()">
+      <span class="bubble-text">Chat</span>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <span class="header-title">UB Games</span>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type your message">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

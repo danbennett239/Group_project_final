@@ -1,0 +1,215 @@
+html{
+ scroll-behavior:smooth; 
+}
+
+/*Main website*/
+* {
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+}
+
+body {
+
+font-family: 'Abel', sans-serif;
+
+}
+
+a {
+
+text-decoration: none;
+
+}
+
+li {
+
+list-style: none;
+
+}
+
+h1 {
+    color: #000;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+h2 {
+    font-family: Georgia, Strait, sans-serif;
+    font-size: 1.5em;
+     line-height: 1.7em;
+
+    text-align: center;
+     color: white;
+    background: #035fa6;
+    text-shadow: 0 0 10px;
+    width: 100%;
+    
+}
+
+/*Navigation bar*/
+
+.navbar{
+    display: fixed;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #000;
+}
+.nav-links a{
+    color: #000;
+}
+
+.navbar ul li a:hover{
+    box-shadow:  0 0 11px rgba(33,33,33,.2);
+}
+
+/* Navbar menu */
+
+.menu {
+    display:flex;
+    gap: 2.5em;
+    font-size: 18px;
+}
+
+.categories{
+    position: relative;
+}
+
+.dropdown {
+    background-color: #808080;
+    padding: 1em 0;
+    position: static;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover{
+    background-color: #4C9E9E;
+}
+
+.categories:hover .dropdown {
+    display: block;
+}
+
+div {
+  font-family: Roberto, Arial;
+  margin: 0;
+}
+.page-block {
+  display: flex;
+  flex-direction: row;
+}
+.game-column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.title {
+  font-size: 30px; 
+  font-weight: bold;
+}
+.discover-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 26px;
+  width: 100px; /*Add padding over H/W*/
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.description {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.game-row {
+  display: flex;
+  flex-direction: row;
+  width: 385px;
+  height: 100px;
+  display: inline-flex;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(230, 230,230);
+  margin-bottom: 8px;
+}
+.game-cover-column {
+  margin-right: 10px;
+}
+.game-cover {
+  height: 100px;
+  width: 75px;
+  object-fit: cover;
+}
+.game-info-column {
+  flex: 1;
+}
+.game-name-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+.game-name {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.price {
+  padding-left: 5px;
+}
+
+/*Layout Styles*/
+
+.banner
+{
+    background: #fff;
+	padding: 1em 0 1em 1.25em;
+	text-align: center;
+}
+/*Footer for the website*/
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 40px;
+  background-color: #808080;
+  font-size: 10px;
+}
+
